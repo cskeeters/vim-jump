@@ -7,4 +7,4 @@ code rather than relying on line numbers (that change often).
 This plugin automates creating a "link" or a "jump line" and jumping when the
 cursor is on a jump line.
 
-For more details see the [vim doc](blob/master/doc/jump.txt).
+For more details see the [vim doc](doc/jump.txt).
