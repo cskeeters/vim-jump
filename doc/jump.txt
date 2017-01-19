@@ -1,0 +1,30 @@
+*jump.txt*	Plugin for jumping into source code
+
+This plugin enables a documenter/developer to write a text file describing an
+aspect of a program and include "links" to the spots in the source code in a
+robust way.  The method of creating robust links was inspired by ctags.  It
+uses an ex command that search through a file for a point in the code rather
+than relying on line numbers (that change often).
+
+This plugin automates creating a "link" or a "jump line" and jumping when the
+cursor is on a jump line.
+
+						*jump-mappings*
+The following mappings are suggested:
+
+Opens a jump line
+
+    nmap <leader>gj <Plug>Jump
+
+Enables saving locations in files in registers
+
+nnoremap <leader>mz :call GetMark('z')<cr>
+nnoremap <leader>mx :call GetMark('x')<cr>
+nnoremap <leader>mc :call GetMark('c')<cr>
+nnoremap <leader>mv :call GetMark('v')<cr>
+
+						*jump_credit*
+jump was developed by Chad Skeeters <github.com/cskeeters>.
+Distributed under Vim's |license|.
+
+vim:tw=78:fo=tcq2:ts=8:ft=help:norl:
