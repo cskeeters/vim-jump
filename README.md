@@ -7,4 +7,12 @@ code rather than relying on line numbers (that change often).
 This plugin automates creating a "link" or a "jump line" and jumping when the
 cursor is on a jump line.
 
+A Jump line looks like this:
+
+    main.cpp	/\Vint main(int argc, char *argv[])
+
+The file name is separated from the search string by a hard tab character.
+This is just text and can jumped from in vim from any text file, including
+markdown.
+
 For more details see the [vim doc](doc/jump.txt).
